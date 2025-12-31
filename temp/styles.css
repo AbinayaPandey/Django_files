@@ -1,6 +1,75 @@
+/* body .greens{
+  display: flex;
+}
+/* .greens{
+  display: flex;
+} */
+/* .box1{
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+}
+.box2{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+.box3{
+  width: 100px;
+  height: 100px;
+  background-color: lime;
+}
+.box4{
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+}
+.box5{
+  width: 100px;
+  height: 100px;
+  background-color: #CCFFCC;
+}
+/* This is where greens ends.  */
+/* body .boxes{
+  display: flex;
+  /* border: 5px solid black; 
+}
+body{
+  display: flex;
+}
 
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 5px solid black;
+  margin: 5px solid red;
+  padding: 5px white;
+} */
 
+body{
+  background-color: cyan;
+}
+.green{
+  border: 5px pink solid;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
 
+.lime{
+  display: flex;
+  height: 30px;
+  width: 30px;
+  margin-top: 30px;
+  background-color: lime;
+  justify-content: center;
+  align-items: center;
+} 
 
 /* .navbar ul {
   list-style-type: none;
