@@ -1,0 +1,68 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.navbar{
+    background-color: crimson;
+    border-radius: 5px;
+    display: flex;
+}
+
+.navbar .nav_elements{
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav_elements ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.nav_elements a{
+    font-family: 'Bebas Neue', 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+ul li{
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.login{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+ul li:hover{
+    background-color: rgb(168, 5, 37);
+}
+ul .login:hover{
+    /* background-color: rgb(168, 5, 37); */
+    height: 33px;
+    width: 33px;
+}
+.logo:hover{
+    /* background-color: rgb(168, 5, 37); */
+    height: 53px;
+    width: 53px;
+}

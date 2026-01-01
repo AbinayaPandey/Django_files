@@ -1,0 +1,91 @@
+
+/* Remove default margins to stick bar to corner */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: crimson;
+    /* Removed border-radius so it sticks to edges */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.nav_elements {
+    margin-left: auto;
+    display: flex;
+}
+
+.nav_elements ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav_elements a {
+    font-family: 'Bebas Neue', 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    padding: 15px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+ul li:hover {
+    background-color: rgb(168, 5, 37);
+}
+
+/* Responsive dropdown logic for mobile screens */
+#menu-toggle,
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        color: white;
+        font-size: 28px;
+        margin-left: auto;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .nav_elements {
+        display: none; /* Hide links by default */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: crimson;
+        flex-direction: column;
+    }
+
+    .nav_elements ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_elements ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked ~ .nav_elements {
+        display: flex;
+    }
+}
