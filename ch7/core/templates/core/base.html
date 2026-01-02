@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% block css %} <link rel="stylesheet" href={% static "core/css/styles.css"%}> {% endblock css %}
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Django</li>
+        <li>Python</li>
+    </ul>
+    <h2>{% block content %} Base{% endblock content %}</h2>
+    <br>
+    <footer><h3>{% block footer %}Base Footer{% endblock footer %}</h3></footer>
+</body>
+</html>
