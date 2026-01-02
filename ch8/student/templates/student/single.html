@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single data</title>
+</head>
+<body>
+    <h1>Single Student Data</h1>
+    {% if student %}
+    <h1>Student list: </h1>
+    <h3>{{students.name}} - {{students.address}} - {{students.email}}</h3>
+    {% comment %} There should be students ( plural ) as the views file is using studnets to denote the data. 
+    + there is no loop iterating over student. {% endcomment %}
+    {% else %}
+    <h1>NO Data</h1>
+    {% endif %} 
+</body>
+</html>
