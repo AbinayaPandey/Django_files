@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Data</title>
+</head>
+<body>
+    <h1>Single Student Data</h1>
+    {% if student %}
+    <h2>Student List:</h2>
+    <h3>{{studnet.name}} - {{student.email}} - {{student.address}}</h3>
+    {% comment %} There is no loop iterating over students ( plural ) like in all.html so use student ( singular ). {% endcomment %}
+    {% else %}
+    <h2>No Data</h2>
+    {% endif %}
+</body>
+</html>
